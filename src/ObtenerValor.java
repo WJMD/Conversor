@@ -18,8 +18,8 @@ public class ObtenerValor {
 	            flag = true;
 	            
 	        } catch (NumberFormatException e) {
-	           JOptionPane.showMessageDialog(null, "La respuesta no es un número válido.");
-	            numero = -1;
+	         //  JOptionPane.showMessageDialog(null, "La respuesta no es un número válido.");
+	          
 	           
 	        }
 	        break;

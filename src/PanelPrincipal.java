@@ -69,20 +69,23 @@ public class PanelPrincipal extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				 int selectedIndex = comboBoxSelecCovercion.getSelectedIndex();
 				 double valor = ObtenerValor.obtenerNumero();
+				 
+				 
+				 if (valor <= 0) {
+					 JOptionPane.showMessageDialog(null, "La respuesta no es un número válido.","Error",JOptionPane.WARNING_MESSAGE);
+					 dispose();
+					 PanelPrincipal pantalla1 = new PanelPrincipal();
+						pantalla1.setVisible(true);
+			               
+					} else {
 				 switch(selectedIndex) {
 				 case 0:
 					 
-					 if (valor == -1) {
-						    // hacer algo aquí
-						 dispose();
-						 PanelPrincipal pantalla1 = new PanelPrincipal();
-							pantalla1.setVisible(true);
-				               
-						} else {
+					
 						    dispose(); // Cierra el JFrame actual
 						    Divisas divisa = new Divisas();
 						    divisa.setVisible(true);
-						}
+						
 				        break;
 	                    
 	                case 1:
@@ -90,16 +93,17 @@ public class PanelPrincipal extends JFrame {
 		                dispose(); // Cierra el JFrame actual
 	                	Temperatura temperatura = new Temperatura();
 	                	temperatura.setVisible(true);
-			                dispose();
+			                
 	                    break;
 	                case 2:
 	                	
 		                dispose(); // Cierra el JFrame actual
 	                	Longitud longitud = new Longitud();
 	                	longitud.setVisible(true);
-			                dispose();
+			               
 	                    break;	              
-				 	}	 
+				 	}
+				}
 			}
 		});
 		btnOK.setFont(new Font("Tahoma", Font.BOLD, 16));

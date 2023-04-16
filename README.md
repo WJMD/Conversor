@@ -78,6 +78,11 @@ Si deseas contactarme, puedes hacerlo a través de mi perfil
 - [@Github](https://github.com/WJMD)
 
 
-## Licencia
+## Insignia
+- `Esta es la insignia dada Por`
+[Alura](https://www.aluracursos.com/)
+`al completar el Challenge del Conversor`
 
-Este proyecto está bajo la licencia AluraLatam.
+<div align='center'>
+  <img alt='Logo' src='https://github.com/WJMD/Conversor/blob/master/Insignia/Insignia%20del%20Alura%20Challenge%20CONVERSOR.png'>
+</div>

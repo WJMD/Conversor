@@ -1,11 +1,13 @@
 package src;
 
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.Font;
+import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.Color;
@@ -71,8 +73,9 @@ public class PanelPrincipal extends JFrame {
 				 double valor = ObtenerValor.obtenerNumero();
 				 
 				 
+				 
 				 if (valor <= 0) {
-					 JOptionPane.showMessageDialog(null, "La respuesta no es un número válido.","Error",JOptionPane.WARNING_MESSAGE);
+					// JOptionPane.showMessageDialog(null, "Valor inválido.","Error",JOptionPane.WARNING_MESSAGE);
 					 dispose();
 					 PanelPrincipal pantalla1 = new PanelPrincipal();
 						pantalla1.setVisible(true);
@@ -91,15 +94,13 @@ public class PanelPrincipal extends JFrame {
 	                case 1:
 	                	
 		                dispose(); // Cierra el JFrame actual
-	                	Temperatura temperatura = new Temperatura();
-	                	temperatura.setVisible(true);
+		                Temp.temperatura();
 			                
 	                    break;
 	                case 2:
 	                	
 		                dispose(); // Cierra el JFrame actual
-	                	Longitud longitud = new Longitud();
-	                	longitud.setVisible(true);
+	                	Medida.convertirLongitud();
 			               
 	                    break;	              
 				 	}

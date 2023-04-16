@@ -1,18 +1,22 @@
 package src;
 
 public class Monedas {
-	
-	
-	public void RDMoneda() {
-		
-		//Esto vale 1 peso Dominicano en las diferentes Monedas
 			
-		double Dolar = 54.88;//peso Dominicano
-		double Euro = 0.92; //EUR
-		double LibrasEsterlinas = 0.80 ; //GBP
-		double Yen = 131.71; //JPY - Yen Japones
-		double  Won = 1318.47; //Dolar Estado Unidense
-		}
+		double DolarPeso = 54.63;//Dolar a peso dominicano
+		double EuroPeso = 60.65; //EURO a peso dominicano
+		double LibrasEstPeso = 67.86 ; // Libras Esterlinas (GBP) a peso dominicano
+		double YenPeso = 0.41; //JPY - Yen Japones a peso dominicano
+		double  WonPeso = 0.042; //won surcoreano (KRW) a peso dominicano
+
+		
+		double PesoDolar = 0.018;//peso a euro 0.016
+		double PesoEuro = 0.056; //peso a dolar 0.056
+		double PesoLibraEst = 0.015 ; //peso a LibrasEsterlina(GBP) 0.015
+		double PesoYen = 2.45; // peso a Yen japones (JPY) 2.45
+		double PesoWon = 23.88; // peso dominicano a won surcoreano (KRW) 23.88
+		
+	
+	
 
 	
 	/*public void DolarAMoneda() {
